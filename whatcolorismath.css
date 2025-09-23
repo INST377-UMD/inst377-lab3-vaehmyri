@@ -1,0 +1,103 @@
+body {
+  background-color: rgb(143, 206, 255);
+}
+
+#bar {
+  text-align: center;
+  background-color: #7c7c7c;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-family: 'Cursive', cursive;
+  clear: both;
+}
+
+#main-nav{
+  background-color: rgb(243, 170, 184);
+  text-align: center;
+}
+
+#main-nav li {
+  display: inline-block;
+  position: relative;
+}
+
+#main-nav li:hover {
+  background-color: #7c7c7c;
+  color: white;
+}
+
+/* If there is a UL under a list element when hovering then show it */
+#main-nav li:hover ul {
+  display: block;
+  background-color: crimson;
+  float: left;
+  position: absolute;
+  padding: 0;
+}
+
+#main-nav ul li {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.content-box {
+  background-color: aliceblue;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 20px;
+  margin-bottom: 0px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content-area {
+  width: 70%;
+  float: left;
+}
+
+#contact {
+  text-align: center;
+  background-color: rgb(242, 205, 244);
+  float: right;
+  width: 25%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.main-container {
+  width: 100%;
+  height: 30%;
+  margin-bottom: 5px;
+}
+
+#name-form{ display: flex;
+  gap : 5px;
+  width: 250px;
+  transition: width 0.3s ease;
+}
+#name-box{
+  flex-grow: 0;
+  width: 200px;
+  padding: 3px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  transition: width 0.3s ease;
+  border-radius: 10px;
+}
+
+#name-box:focus{
+  width: 500px;
+}
+
+#name-form:focus-within{
+  width: 550px;
+}
+
+#contact:hover{
+    background-color: rgb(231, 136, 231)
+  }
